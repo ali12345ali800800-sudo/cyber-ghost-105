@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Ghost 105</title>
+    <style>
+        body { background: #000; color: #0f0; text-align: center; font-family: monospace; padding-top: 100px; }
+        .box { border: 1px solid #0f0; display: inline-block; padding: 20px; border-radius: 10px; }
+        input { background: #111; border: 1px solid #0f0; color: #0f0; padding: 10px; margin-bottom: 10px; width: 80%; }
+        button { background: #0f0; color: #000; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>لوحة تحكم سايبر-غوست 105</h1>
+        <p>أدخل كود التفعيل الخاص بك</p>
+        <input type="text" id="pass" placeholder="105">
+        <button onclick="check()">دخول</button>
+    </div>
+    <script>
+        function check() {
+            if(document.getElementById('pass').value === "105") {
+                alert("تم التفعيل بنجاح!");
+            } else { alert("خطأ في الكود!"); }
+        }
+    </script>
+</body>
+</html>
